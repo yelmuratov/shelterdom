@@ -1,0 +1,206 @@
+@media only screen and (max-width:768px){
+    /*main*/
+    #main{
+        height: 1165px;
+    }
+    
+    .wrapper-main{
+        box-sizing: border-box;
+        padding: 0 30px;
+        padding-top: 30px;
+        width: 768px;
+        display: block;
+    }
+
+    #header{
+        width: 708px;
+        margin-bottom: 60px;
+    }
+    
+    .logo{
+        height: 60px;
+        width: 184px;
+        margin-right: 78px;
+    }
+
+    .title{
+        font-size: 36px;
+        white-space: nowrap;
+    }
+
+    #navbar ul li{
+        white-space: nowrap;
+    }
+
+    .start-screen__content{
+        display: block;
+    }
+
+    .content{
+        display: block;
+        width: 460px;
+        height: 322px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        position: relative;
+    }
+
+    .heading{
+        margin: 0;
+        margin-bottom: 42px;
+        text-align: left;
+    }
+
+    .subheading{
+        text-align: left;
+    }
+
+    .start-screen__puppy{
+        height: 593px;
+        width: 569px;
+        position: absolute;
+        right: 30px;
+    }
+
+    /*/main*/
+
+    /*Section*/
+
+    /*about*/
+
+    .wrapper-about{
+        width: 768px;
+        height: 1048px;
+        padding: 80px 169px 100px 169px;
+        display: block;
+        position: relative;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .about-description{
+        text-align: left;
+    }
+
+    .about-pets{
+        position: absolute;
+        top: 540px;
+        left: 234px;
+    }
+
+    /*about*/
+
+    /*Pets*/
+
+    .wrapper-pets{
+        width: 768px;
+        height: 877px;
+        padding: 80px 30px 100px 30px;
+    }
+
+    .slider{
+        width: 620px;
+    }
+
+    .prev-btn{
+        top: 450px;
+        left: 10px;
+    }
+    
+    .next-btn{
+        right: 10px;
+    }
+    /*/Pets*/
+
+    /*Help*/
+
+    .wrapper-help{
+        width: 768px;
+        height: 779px;
+        padding: 80px 40px 100px 40px;
+        text-align: center;
+    }
+    
+    .help-list{
+        width: 630px;
+        height: 449px;
+        padding: 0 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 55px;
+        padding-left: 20px;
+    }
+    
+    
+    .help-list div{
+        height: 113px;
+        width: 190px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 55px;
+    }
+
+    .vitamins{
+        padding-right: 70px;
+    }
+
+   .leeping{
+    padding-left: 95px;
+   }
+
+   .collars img{
+    margin-bottom: 8px;
+   }
+    /*/Help*/
+
+    /*Donation*/
+
+    .wrapper-donation{
+        width: 768px;
+        height: 783px;
+        display: block;
+        position: relative;
+    }
+
+    .donation-dog {
+        position: absolute;
+        top: 422px;
+        right: 132px;
+    }
+
+    /*/Donation*/
+
+    /*/Section*/
+
+    /*Footer*/
+     
+    #footer{
+        height: 639px;
+    }     
+
+    .wrapper-footer{
+        width: 768px;
+        display: block;
+        padding: 30px 30px 0px 30px;
+        text-align: center;
+    }
+    
+    .footer-content{
+        text-align: left;
+        justify-content: space-between;
+        width: 650px;
+        margin: 0;
+    }
+    
+    .contacts{
+        margin-right: 60px;
+        padding-left: 20px;
+    }
+
+    /*/Footer*/
+}

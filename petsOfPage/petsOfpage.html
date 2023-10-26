@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our pets</title>
+
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="pets.css">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="modal-background">
+    <div class="modalCloseBtn"><i class="fa-solid fa-xmark"></i></div>
+    <div class="modal-active">
+        <div class="modal-window">
+            <div class="animal-img">
+            </div>
+            <div class="animal-description">
+                <h3 class="animal-name">Jennifer</h3>
+                <p class="animal-breed"><span class="type">Dog -</span> <spna class="breed">Labrador</spna></p>
+                <p class="aboutOfAnimal">
+                    Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.
+                </p>
+                <ul class="informationOfAnimal">
+                    <li class="age">
+                        <span class="information-text">Age:</span>
+                        <span class="ageValue"></span>
+                    </li>
+                    <li class="inoculation">
+                        <span class="information-text">Inoculation:</span>
+                        <span class="inoculationValue"></span>
+                    </li>
+                    <li class="diseases">
+                        <span class="information-text">Diseases:</span>
+                        <span class="diseasesValue"></span>
+                    </li>
+                    <li class="parasites">
+                        <span class="information-text">Parasites:</span>
+                        <span class="parasitesValue"></span>
+                    </li>
+                </ul>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</div>
+  <header id="header">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#" id="logo">
+              <h1 class="title">
+                  Cozy House
+              </h1>
+          </a>
+          <p class="subtitle">
+              Shelter for pets in Boston
+          </p>
+        </div>
+        <nav id="navbar">
+          <ul>
+              <li><a href="../index.html">About the shelter</a></li>
+              <li><a href="./petsOfPage/petsOfpage.html" class="active">Our pets</a></li>
+              <li><a href="#help">Help the shelter</a></li>
+              <li class="end"><a href="#footer">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+  <section id="section">
+    <div class="wrapper">
+      <h1 class="pets-header">
+        Our friends who <br>
+        are looking for a house
+      </h1>
+      <div class="page1">
+          <div class="card" id="Katrine">
+            <img src="../imges/pets-katrine.png" alt="katrine-cat">
+            <p class="name">Katrine</p>
+            <button class="btn-secondary"> <span></span> Learn more</button>
+          </div>
+          <div class="card" id="Jennifer">
+            <img src="../imges/pets-jennifer.png" alt="jennifer-puppy">
+            <p class="name">Jennifer</p>
+            <button class="btn-secondary"> <span></span> Learn more</button>
+          </div>
+          <div class="card" id="Woody">
+            <img src="../imges/pets-woody.png" alt="woody-dog">
+            <p class="name">Woody</p>
+            <button class="btn-secondary"> <span></span> Learn more</button>
+          </div>
+          <div class="card" id="Sophia">
+            <img src="../imges/pets-katrine (1).png" alt="katrine-cat">
+            <p class="name">Sophia</p>
+            <button class="btn-secondary"> <span></span> Learn more</button>
+          </div>
+          <div class="card" id="Timmy">
+            <img src="../imges/pets-timmy.png" alt="katrine-cat">
+            <p class="name">Timmy</p>
+            <button class="btn-secondary"> <span></span> Learn more</button>
+          </div>
+          <div class="card" id="Charly">
+            <img src="../imges/pets-charly.png" alt="katrine-cat">
+            <p class="name">Charly</p>
+            <button class="btn-secondary"> <span></span> Learn more</button>
+          </div>
+          <div class="card" id="Scarlett">
+            <img src="../imges/pets-scarlet.png" alt="katrine-cat">
+            <p class="name">Scarlett</p>
+            <button class="btn-secondary"> <span></span> Learn more</button>
+          </div>
+          <div class="card" id="Freddie">
+            <img src="../imges/pets-katrine (2).png" alt="katrine-cat">
+            <p class="name">Freddie</p>
+            <button class="btn-secondary"> <span></span> Learn more</button>
+          </div>
+      </div>
+      <div class="navigation">
+        <div class="wrapper-navigation">
+            <div class="paginator-left">
+              <i class="fa-solid fa-less-than"></i>
+              <i class="fa-solid fa-less-than"></i> 
+            </div>
+            <div class="paginator-left">
+              <i class="fa-solid fa-less-than"></i> 
+            </div>
+            <div class="Number">1</div>
+            <div class="paginator-right">
+              <i class="fa-solid fa-greater-than"></i>
+            </div>
+            <div class="paginator-right">
+              <i class="fa-solid fa-greater-than"></i>
+              <i class="fa-solid fa-greater-than"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="wrapper-footer">
+        <div class="footer-content">
+            <div class="contacts">
+                <h3 class="contacts-heading">For questions <br> and suggestions</h3>
+                <p class="mail"><img src="../imges/mail.png" alt="mail" class="mail-img">email@shelter.com</p>
+                <p class="phone"><img src="../imges/phone.png" alt="phone" class="phone-img">+13 674 567 75 54</p>
+            </div>
+            <div class="location">
+                <h3 class="loction-heading">We are waiting <br> for your visit</h3>
+                <p class="town">
+                    <img src="../imges/pin.png" alt="location" class="location-img">1 Central Street, Boston <br> (entrance from the store)
+                </p>
+                <p class="street">
+                    <img src="../imges/pin.png" alt="location" class="location-img">18 South Park, London 
+                </p>
+            </div>
+        </div>
+        <div class="footer-puppy">
+            <img src="../imges/footer-puppy.png" alt="footer-puppy">
+        </div>
+    </div>
+</footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>

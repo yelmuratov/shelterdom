@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.modal-background{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: #29292999;
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+
+.modal-active{
+    background-color: #FAFAFA;
+    width: 900px;
+    height: 500px;
+    margin-left: calc(50% - 425px);
+    margin-top: calc(50% - 720px);
+    border-radius: 9px;
+}
+
+.modalCloseBtn{
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 145px;
+    position: relative;
+    left: 1325px;
+    cursor: pointer;
+}
+
+.modal-window{
+    display: flex;
+}
+
+/* .animal-img{
+    width: 50%;
+    height: 100%;
+} */
+
+.animal-img img{
+   width: 500px;
+   height: 500px;
+}
+
+.animal-description{
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.animal-name{
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.animal-breed{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.aboutOfAnimal{
+    font-size: 15px;
+    width: 350px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+}
+
+.informationOfAnimal{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.information-text{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.informationOfAnimal li{
+    margin-bottom: 12px;
+}
+
+.informationOfAnimal li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #F1CDB3; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; 
+}
+
+/*Main*/
+
+#main{
+    background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    height: 908px;
+}
+
+.wrapper-main{
+    padding:0 40px;
+    padding-top: 60px;
+    width: 1360px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#header{
+    height: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    text-decoration: none;
+}
+
+.title{
+    margin-bottom: 10px;
+    color: #F1CDB3;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.subtitle{
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: arial;
+    width: 400px;
+    letter-spacing: 0.1em;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    margin-right:35px;
+    position: relative;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: #CDCDCD;
+    font-size: 15px;
+    font-family: arial;
+}
+
+#navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #F1CDB3;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+
+#navbar ul li:hover::after{
+    width: 100%;
+}
+
+#navbar ul li:hover{
+    cursor: pointer;
+}
+
+li.end{
+    margin: 0;
+}
+
+.start-screen__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading{
+    color: #FFFFFF;
+    font-size: 44px;
+    font-weight: 400;
+    font-family: georgia;
+    margin-top: 225px;
+    margin-bottom: 42px;
+}
+
+.subheading{
+    color: #CDCDCD;
+    font-size: 15px;
+    font-family: arial;
+    margin-bottom: 42px;
+    width: 460px;
+    line-height: 24px;
+}
+
+.btn-primary{
+    color: #292929;
+    font-size: 17px;
+    font-family: georgia;
+    letter-spacing: 2px;
+    padding: 15px 45px 15px 45px;
+    border-radius: 100px;
+    letter-spacing: 0.06em;
+    background-color: #F1CDB2;
+    border: none;
+    transition: all 0.3s linear;
+    margin-right: 60px;
+}
+
+.btn-primary:hover{
+    background-color: #fddcc4;
+    box-shadow: 0 0 0 1px #F1CDB2 ;
+    cursor: pointer;
+}
+
+/*/Main*/
+
+/*Section*/
+
+/*About*/
+
+.wrapper-about{
+    width: 1280px;
+    height: 588px;
+    margin: 0 auto;
+    padding: 80px 100px 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-pets{
+    margin-right: 120px;
+}
+
+.about-heading{
+    color: #545454;
+    font-size: 35px;
+    font-family: georgia;
+    font-weight: 400;
+    margin-top: 14px;
+    letter-spacing: 2px;
+    width: 370px;
+}
+
+.about-subheading{
+    color: #4C4C4C;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 25px;
+    line-height: 160%; /*or 24px*/
+    width: 430px;
+}
+
+/*/About*/
+
+
+/*Pets*/
+#pets{
+    background-color: #F6F6F6;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-pets{
+    width: 1280px;
+    height: 877px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.pets-heading{
+    color:#545454;
+    font-size:35px;
+    font-family:Georgia;
+    font-weight:400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.slider{
+    width: 990px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.slider-line{
+    width: 2580px;
+    display: flex;
+    grid-gap: 60px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    position: relative;
+    transition: all .3s ease-out;
+    left: 0PX;
+}
+
+.card{
+    width: 270px;
+    height: 435px;
+    background-color: #FAFAFA;
+    text-align: center;
+    z-index: 1;
+    border-radius: 9px 9px 0 0 ;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,.055);
+}
+
+.name{
+    color: #545454;
+    font-size: 20px;
+    font-family: georgia;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin: 30px;
+    letter-spacing: 2px;
+}
+
+.btn-secondary{
+    color: #292929;
+    font-size: 17px;
+    font-family: georgia;
+    font-weight: 400;
+    width: 180px;
+    height: 50px;
+    border-radius: 100px;
+    padding: 0 15px;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #F1CDB3;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-btn{
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+}
+
+.prev-btn{
+    top: 450px;
+    left: 80px;
+}
+
+.next-btn{
+    top: 450px;
+    right: 80px;
+}
+
+.slider-btn i{
+    color: #292929;
+}
+
+.btn-secondary span{
+    width: 0;
+    height: 100%;
+    border-radius: 100px;
+    background: #F1CDB2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-secondary:hover span{
+    width: 100%;
+}
+
+.btn-secondary:hover{
+    border: none;
+}
+/*/Pets*/
+
+/*Help*/
+
+.wrapper-help{
+    width: 1280px;
+    height: 611px;
+    margin: 0 auto;
+    padding: 80px 127px 100px 95px;
+    box-sizing: border-box;
+}
+
+.heading-help{
+    color: #545454;
+    font-size: 35px;
+    letter-spacing: 6%; /* or 2.1px*/
+    font-family: georgia;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 90px;
+}
+
+.help-list{
+    width: 1269px;
+    height: 336px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.help-list div{
+    text-align: center;
+    height: 113px;
+    margin-right: 120px;
+    margin-bottom: 55px;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vitamins{
+    box-sizing: border-box;
+    padding-left: 80px;
+}
+
+.leeping{
+    box-sizing: border-box;
+    padding-right: 100px;
+}
+
+.text{
+    color: #545454;
+    font-size: 20px;
+    font-family: georgia;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    white-space: nowrap;
+}
+
+/*/Help*/
+
+/*Donation*/
+
+#donation{
+    background-color: #F6F6F6;
+}
+
+.wrapper-donation{
+    width: 1280px;
+    height: 462px;
+    margin: 0 auto;
+    padding: 80px 100px 182px 183px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.donation-dog{
+    margin-right: 30px;
+}
+
+.heading-donation{
+    font-size: 35px;
+    width: 307px;
+}
+
+.donation-subheading{
+    font-size: 15px;
+}
+
+.heading-donation,.donation-subheading{
+    color: #545454;
+    font-family: georgia;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.credit-card{
+    background-color: #F1CDB3;
+    padding: 10px 15px 10px 15px;
+    border-radius: 9px;
+    font-size: 20px;
+    color: #545454;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 355px;
+    white-space: nowrap;
+}
+
+.credit-card:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card-img{
+    margin-right: 15px;
+}
+
+.donation-subtitle{
+    color: #B2B2B2;
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    width: 380px;
+}
+
+/*/Donation*/
+
+/*/section*/
+
+/*Footer*/
+
+#footer{
+    background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    overflow: hidden;
+}
+
+.wrapper-footer{
+    width: 1280px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 0;
+    padding: 40px 40px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.contacts-heading,.loction-heading{
+    color: #FFFFFF;
+    font-size: 35px;
+    letter-spacing: 6%; /* or 2.1px*/
+    font-family: georgia;
+    font-weight: 400;
+    margin-bottom: 43px;
+}
+
+
+.mail,.phone,.town,.street{
+    color: #F1CDB3;
+    font-size: 20px;
+    letter-spacing: 6%; /* or 2.1px*/
+    font-family: georgia;
+    font-weight: 400;
+    margin-bottom: 49px;
+    display: flex;
+    align-items: center;
+}
+
+.mail-img,.phone-img,.location-img{
+    margin-right: 20px;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.contacts{
+    margin-right: 160px;
+}
+
+
+
+/*/Footer*/
